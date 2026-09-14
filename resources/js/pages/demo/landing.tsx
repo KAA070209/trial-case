@@ -119,10 +119,10 @@ function css(decl: string): CSSProperties {
 }
 
 const navStyle = (scrolled: boolean, bannerH: number): string =>
-  `position:fixed;top:${bannerH}px;left:0;right:0;z-index:50;height:72px;box-sizing:border-box;transition:all 0.3s;border-bottom:1px solid #eeeeee;` +
+  `position:fixed;top:${bannerH}px;left:0;right:0;z-index:50;height:78px;box-sizing:border-box;transition:all 0.3s;border-bottom:1px solid #f3f4f6;` +
   (scrolled
-    ? 'background:rgba(255,255,255,0.97);box-shadow:0 5px 18px rgba(0,0,0,0.10);backdrop-filter:blur(8px);'
-    : 'background:#fff;box-shadow:0 2px 8px rgba(0,0,0,0.07);');
+    ? 'background:rgba(255,255,255,0.95);box-shadow:0 4px 12px rgba(0,0,0,0.08);backdrop-filter:blur(8px);'
+    : 'background:#fff;box-shadow:0 1px 3px rgba(0,0,0,0.05);');
 
 const cmpHeaderStyle = (bannerH: number): string =>
   `position:sticky;top:${bannerH + 64}px;z-index:20;display:grid;grid-template-columns:1.5fr 0.85fr 0.85fr 0.9fr;background:#F9F9F9;border-bottom:1px solid #ececec;border-radius:20px 20px 0 0;align-items:stretch;overflow:hidden;`;
@@ -168,6 +168,7 @@ const KEYFRAMES = `
   h1, h2, h3, h4, h5, h6, p, span, div, li, a, button, input, select, textarea, ul, ol, strong, b, em, i, label { font-family: 'Nunito', system-ui, sans-serif; }
     a:not([class]) { color: #D70808; }
     a:not([class]):hover { color: #b30606; }
+  section[id], div[id] { scroll-margin-top: 120px; }
   @keyframes infiniteScroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
   @keyframes fbFadeInUp { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: translateY(0); } }
   @keyframes fbSheetUp { from { transform: translateY(100%); } to { transform: translateY(0); } }
@@ -326,19 +327,8 @@ export default function LandingPage() {
         </>) : null}
       
         {/* Navbar */}
-        {/* Navbar */}
 <header id="hero-navbar"
-    style={{
-        position: 'fixed',
-        top: bannerH,
-        left: 0,
-        right: 0,
-        zIndex: 50,
-        height: '78px',
-        background: '#fff',
-        borderBottom: '1px solid #eeeeee',
-        boxSizing: 'border-box',
-    }}
+    style={css(navStyle(scrolled, bannerH))}
 >
     <div
         style={{
@@ -551,8 +541,8 @@ export default function LandingPage() {
           <p className="[margin:0_0_18px] [text-align:center] [font-size:13px] [line-height:1.35] [font-weight:800] [letter-spacing:0.08em] [text-transform:uppercase] [color:#374151]">
             Alumni Kami Sekarang Kuliah Di
           </p>
-          <div className="[width:100%] [overflow:hidden]">
-            <div id="alumni-logo-track" className="[display:flex] [width:100%] [align-items:center] [justify-content:space-around] [box-sizing:border-box] [padding:0_12px]">
+          <div className="[width:100%] [overflow:hidden] [mask-image:linear-gradient(to_right,transparent,black_6%,black_94%,transparent)] [-webkit-mask-image:linear-gradient(to_right,transparent,black_6%,black_94%,transparent)]">
+            <div id="alumni-logo-track" className="[display:flex] [width:max-content] [align-items:center] [justify-content:space-around] [box-sizing:border-box] [padding:0_12px] [animation:infiniteScroll_30s_linear_infinite]">
               <div role="img" aria-label="IPB University" className="[width:110px] [height:64px] [flex:0_0_110px] [background-image:url(/assets/logos/ipb.png)] [background-size:contain] [background-repeat:no-repeat] [background-position:center]"></div>
               <div role="img" aria-label="Universitas Airlangga" className="[width:110px] [height:64px] [flex:0_0_110px] [background-image:url(/assets/unair.png)] [background-size:contain] [background-repeat:no-repeat] [background-position:center]"></div>
               <div role="img" aria-label="Universitas Padjadjaran" className="[width:110px] [height:64px] [flex:0_0_110px] [background-image:url(https://www.unpad.ac.id/wp-content/uploads/2025/12/logo-unpad-duo.svg)] [background-size:contain] [background-repeat:no-repeat] [background-position:center]"></div>
@@ -1208,7 +1198,7 @@ export default function LandingPage() {
                     </div>
                   ))}
                 </div>
-              </div>
+              </div> 
       
               <div className="[margin:0_auto_56px] [width:100%] [max-width:896px]">
                 <p className="[margin:0_0_24px] [text-align:center] [font-size:12px] [font-weight:700] [letter-spacing:0.08em] [text-transform:uppercase] [color:#9ca3af]">Testimoni Alumni yang Sukses Masuk Universitas Luar Negeri</p>
@@ -1889,7 +1879,7 @@ export default function LandingPage() {
         {/* FAQ */}
         <section id="faq" className="[background:#F3F3F3] [padding:80px_24px_48px]">
           <div className="[max-width:1152px] [margin:0_auto]">
-            <div className="[text-align:left] [margin-bottom:56px]">
+            <div className="[text-align:center] [margin-bottom:56px]">
               <div className="[display:inline-flex] [align-items:center] [gap:8px] [font-size:12px] [font-weight:700] [text-transform:uppercase] [letter-spacing:0.08em] [padding:6px_16px] [border-radius:9999px] [margin-bottom:20px] [background:#FFF0F0] [color:#D70808] [border:1px_solid_#ffb3b3]">❓ Masih Ragu?</div>
               <h2 className="[margin:0] [font-size:clamp(24px,3vw,36px)] [font-weight:900] [font-family:Nunito,sans-serif] [color:#151515]">Apakah Kamu Benar-Benar <span className="[color:#D70808]">Butuh Ini Sekarang?</span></h2>
             </div>
