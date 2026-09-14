@@ -1,2 +1,2 @@
 [phases.build]
-cmds = ["npm cache clean --force && npm ci --registry=https://registry.npmmirror.com --fetch-retries=8 --fetch-retry-factor=2 --fetch-retry-mintimeout=10000 --fetch-retry-maxtimeout=120000 && npm run build"]
+cmds = ["echo 'Frontend assets are pre-built and committed; skipping npm build.'"]
