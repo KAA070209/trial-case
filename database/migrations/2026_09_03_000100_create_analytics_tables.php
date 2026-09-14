@@ -98,8 +98,8 @@ return new class extends Migration
             $table->unsignedTinyInteger('max_scroll_depth')->default(0);
             $table->boolean('is_engaged')->default(false);
             $table->boolean('is_bounce')->default(true);
-            $table->timestamp('started_at');
-            $table->timestamp('last_seen_at');
+            $table->timestamp('started_at')->useCurrent();
+            $table->timestamp('last_seen_at')->useCurrent();
         });
     }
 

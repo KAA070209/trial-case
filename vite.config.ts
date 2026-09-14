@@ -20,6 +20,9 @@ export default defineConfig({
                 bunny('Space Grotesk', {
                     weights: [600, 700],
                 }),
+                bunny('Nunito', {
+                    weights: [400, 500, 600, 700, 800, 900],
+                }),
             ],
         }),
         inertia(),
