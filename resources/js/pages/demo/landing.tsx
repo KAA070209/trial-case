@@ -51,7 +51,7 @@ const WA_SCREENSHOTS: { src: string; score: string }[] = [
 const REVIEW_COUNT = 19;
 
 const reviewSrc = (i: number): string =>
-    `/assets/Riview (${i + 1}).webp`;
+    `/assets/Review ${i + 1}.webp`;
 const RETURN_OPTIONS: string[] = [
   'Harganya masih terlalu mahal buatku',
   'Belum yakin bisa mencapai target TOEFL-ku',
@@ -308,7 +308,7 @@ export default function LandingPage() {
       <style>{KEYFRAMES}</style>
       
       
-      <div className="[min-height:100vh] [background:#fff] [font-family:Nunito,system-ui,sans-serif]">
+      <div id="fb-lp" className="[min-height:100vh] [background:#fff] [font-family:Nunito,system-ui,sans-serif]">
       
         {/* Urgency Banner */}
         {flashVisible ? (<>
@@ -549,8 +549,8 @@ export default function LandingPage() {
             Alumni Kami Sekarang Kuliah Di
           </p>
           <div className="[width:100%] [overflow:hidden]">
-            <div className="[display:flex] [width:100%] [align-items:center] [justify-content:space-around] [box-sizing:border-box] [padding:0_12px]">
-              <div role="img" aria-label="IPB University" className="[width:110px] [height:64px] [flex:0_0_110px] [background-image:url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixYKuV2c5YoKDj9dHdJt5S1Lt-RSNZ0_3GgZbEbylP9emf5D9KGekhNq9RImhInYYgfcyOsyFFbDOdugmWwN2nWqxA2tDtJux26STvOi6BVFBM43oClQX5rK3aeIzbhUm_thZRVsKYxFgFJXa4AoumNIp5eBy3nYfzqgBpHIX_afCiFGRzAz-E_g/w320-h223/IPB%20University%20(Institut%20Pertanian%20Bogor)%20Logo.png)] [background-size:contain] [background-repeat:no-repeat] [background-position:center]"></div>
+            <div id="alumni-logo-track" className="[display:flex] [width:100%] [align-items:center] [justify-content:space-around] [box-sizing:border-box] [padding:0_12px]">
+              <div role="img" aria-label="IPB University" className="[width:110px] [height:64px] [flex:0_0_110px] [background-image:url(/assets/logos/ipb.png)] [background-size:contain] [background-repeat:no-repeat] [background-position:center]"></div>
               <div role="img" aria-label="Universitas Airlangga" className="[width:110px] [height:64px] [flex:0_0_110px] [background-image:url(/assets/unair.png)] [background-size:contain] [background-repeat:no-repeat] [background-position:center]"></div>
               <div role="img" aria-label="Universitas Padjadjaran" className="[width:110px] [height:64px] [flex:0_0_110px] [background-image:url(https://www.unpad.ac.id/wp-content/uploads/2025/12/logo-unpad-duo.svg)] [background-size:contain] [background-repeat:no-repeat] [background-position:center]"></div>
               <div role="img" aria-label="Institut Teknologi Sepuluh Nopember" className="[width:110px] [height:64px] [flex:0_0_110px] [background-image:url(https://katamata.wordpress.com/wp-content/uploads/2009/01/logo-its-biru-transparan.png)] [background-size:contain] [background-repeat:no-repeat] [background-position:center]"></div>
@@ -560,6 +560,16 @@ export default function LandingPage() {
               <div role="img" aria-label="Universitas Indonesia" className="[width:110px] [height:64px] [flex:0_0_110px] [background-image:url(https://www.monsoonsim.com/uploads/190972_f18baac4e23711d2723e0f822030a77919694fe0.png)] [background-size:contain] [background-repeat:no-repeat] [background-position:center]"></div>
               <div role="img" aria-label="Institut Teknologi Bandung" className="[width:110px] [height:64px] [flex:0_0_110px] [background-image:url(https://upload.wikimedia.org/wikipedia/id/9/95/Logo_Institut_Teknologi_Bandung.png)] [background-size:contain] [background-repeat:no-repeat] [background-position:center]"></div>
               <div role="img" aria-label="Universitas Gadjah Mada" className="[width:110px] [height:64px] [flex:0_0_110px] [background-image:url(https://iconlogovector.com/uploads/images/2024/11/lg-673f9e2f068ed-Universitas-Gadjah-Mada.webp)] [background-size:contain] [background-repeat:no-repeat] [background-position:center]"></div>
+              <div aria-hidden="true" role="img" className="[width:110px] [height:64px] [flex:0_0_110px] [background-image:url(/assets/logos/ipb.png)] [background-size:contain] [background-repeat:no-repeat] [background-position:center]"></div>
+              <div aria-hidden="true" role="img" className="[width:110px] [height:64px] [flex:0_0_110px] [background-image:url(/assets/unair.png)] [background-size:contain] [background-repeat:no-repeat] [background-position:center]"></div>
+              <div aria-hidden="true" role="img" className="[width:110px] [height:64px] [flex:0_0_110px] [background-image:url(https://www.unpad.ac.id/wp-content/uploads/2025/12/logo-unpad-duo.svg)] [background-size:contain] [background-repeat:no-repeat] [background-position:center]"></div>
+              <div aria-hidden="true" role="img" className="[width:110px] [height:64px] [flex:0_0_110px] [background-image:url(https://katamata.wordpress.com/wp-content/uploads/2009/01/logo-its-biru-transparan.png)] [background-size:contain] [background-repeat:no-repeat] [background-position:center]"></div>
+              <div aria-hidden="true" role="img" className="[width:110px] [height:64px] [flex:0_0_110px] [background-image:url(https://bauk.undip.ac.id/wp-content/uploads/2023/11/web-undip-logo-1.png)] [background-size:contain] [background-repeat:no-repeat] [background-position:center]"></div>
+              <div aria-hidden="true" role="img" className="[width:110px] [height:64px] [flex:0_0_110px] [background-image:url(https://www.nottingham.ac.uk/Brand/LegacyAssets/images-multimedia/2022/Logos/BrandEvolution-NottinghamBlue.png)] [background-size:contain] [background-repeat:no-repeat] [background-position:center]"></div>
+              <div aria-hidden="true" role="img" className="[width:110px] [height:64px] [flex:0_0_110px] [background-image:url(https://upload.wikimedia.org/wikipedia/commons/c/cc/Universit%C3%A4t_Stuttgart_Logo.png)] [background-size:contain] [background-repeat:no-repeat] [background-position:center]"></div>
+              <div aria-hidden="true" role="img" className="[width:110px] [height:64px] [flex:0_0_110px] [background-image:url(https://www.monsoonsim.com/uploads/190972_f18baac4e23711d2723e0f822030a77919694fe0.png)] [background-size:contain] [background-repeat:no-repeat] [background-position:center]"></div>
+              <div aria-hidden="true" role="img" className="[width:110px] [height:64px] [flex:0_0_110px] [background-image:url(https://upload.wikimedia.org/wikipedia/id/9/95/Logo_Institut_Teknologi_Bandung.png)] [background-size:contain] [background-repeat:no-repeat] [background-position:center]"></div>
+              <div aria-hidden="true" role="img" className="[width:110px] [height:64px] [flex:0_0_110px] [background-image:url(https://iconlogovector.com/uploads/images/2024/11/lg-673f9e2f068ed-Universitas-Gadjah-Mada.webp)] [background-size:contain] [background-repeat:no-repeat] [background-position:center]"></div>
             </div>
           </div>
         </div>
@@ -837,7 +847,7 @@ export default function LandingPage() {
       
             <div className="[max-width:840px] [margin:0_auto_44px]">
               <div className="[position:relative] [border-radius:20px] [overflow:hidden] [background:#151515] [border:1px_solid_#e5e5e5] [box-shadow:0_8px_32px_rgba(0,0,0,0.12)] [aspect-ratio:16/9]">
-                <div className="[position:absolute] [inset:0] [display:flex] [flex-direction:column] [align-items:center] [justify-content:center] [gap:14px] [background:repeating-linear-gradient(135deg,#1c1c1c_0,#1c1c1c_14px,#191919_14px,#191919_28px)]">
+                <div className="[position:absolute] [inset:0] [display:flex] [flex-direction:column] [align-items:center] [justify-content:center] [gap:14px] [background-image:linear-gradient(rgba(21,21,21,0.42),rgba(21,21,21,0.42)),url('/assets/lms-1.webp')] [background-size:cover] [background-position:center]">
                   <span className="[display:flex] [align-items:center] [justify-content:center] [width:66px] [height:66px] [border-radius:9999px] [background:#D70808] [box-shadow:0_8px_26px_rgba(215,8,8,0.45)]">
                     <span className="[display:block] [width:0] [height:0] [margin-left:5px] [border-style:solid] [border-width:13px_0_13px_21px] [border-color:transparent_transparent_transparent_#fff]"></span>
                   </span>
@@ -1951,17 +1961,17 @@ export default function LandingPage() {
             <div className="[display:flex] [flex-wrap:wrap] [gap:8px] [justify-content:center] [margin-bottom:32px]">
               <button onClick={() => setActiveCat(null)} style={css(catBtnStyle(activeCat === null))}>Semua</button>
               
-                <button onClick={() => toggleCat(0)} style={css(catBtnStyle(activeCat === FAQ_CATEGORIES[-1]))}>Belajar Mandiri (LMS)</button>
+                <button onClick={() => toggleCat(0)} style={css(catBtnStyle(activeCat === FAQ_CATEGORIES[0]))}>Belajar Mandiri (LMS)</button>
               
-                <button onClick={() => toggleCat(1)} style={css(catBtnStyle(activeCat === FAQ_CATEGORIES[-1]))}>Metode &amp; Efektivitas</button>
+                <button onClick={() => toggleCat(1)} style={css(catBtnStyle(activeCat === FAQ_CATEGORIES[1]))}>Metode &amp; Efektivitas</button>
               
-                <button onClick={() => toggleCat(2)} style={css(catBtnStyle(activeCat === FAQ_CATEGORIES[-1]))}>Dibimbing Tutor</button>
+                <button onClick={() => toggleCat(2)} style={css(catBtnStyle(activeCat === FAQ_CATEGORIES[2]))}>Dibimbing Tutor</button>
               
-                <button onClick={() => toggleCat(3)} style={css(catBtnStyle(activeCat === FAQ_CATEGORIES[-1]))}>Sertifikat &amp; Legalitas</button>
+                <button onClick={() => toggleCat(3)} style={css(catBtnStyle(activeCat === FAQ_CATEGORIES[3]))}>Sertifikat &amp; Legalitas</button>
               
-                <button onClick={() => toggleCat(4)} style={css(catBtnStyle(activeCat === FAQ_CATEGORIES[-1]))}>Pendaftaran &amp; Pembayaran</button>
+                <button onClick={() => toggleCat(4)} style={css(catBtnStyle(activeCat === FAQ_CATEGORIES[4]))}>Pendaftaran &amp; Pembayaran</button>
               
-                <button onClick={() => toggleCat(5)} style={css(catBtnStyle(activeCat === FAQ_CATEGORIES[-1]))}>Jaminan &amp; Garansi</button>
+                <button onClick={() => toggleCat(5)} style={css(catBtnStyle(activeCat === FAQ_CATEGORIES[5]))}>Jaminan &amp; Garansi</button>
               
             </div>
       
