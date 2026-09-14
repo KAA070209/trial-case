@@ -1,2 +1,5 @@
+[phases.build]
+cmds = ["echo 'Frontend assets are pre-built and committed; skipping npm build.'"]
+
 [start]
 cmd = "node /assets/scripts/prestart.mjs /assets/nginx.template.conf /nginx.conf && chmod -R 777 /app/storage /app/bootstrap/cache /var/log/nginx && (php-fpm -y /assets/php-fpm.conf & nginx -c /nginx.conf)"
