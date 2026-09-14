@@ -169,7 +169,15 @@ const KEYFRAMES = `
     a:not([class]) { color: #D70808; }
     a:not([class]):hover { color: #b30606; }
   section[id], div[id] { scroll-margin-top: 120px; }
-  @keyframes infiniteScroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  @keyframes infiniteScroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
   @keyframes fbFadeInUp { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: translateY(0); } }
   @keyframes fbSheetUp { from { transform: translateY(100%); } to { transform: translateY(0); } }
   @keyframes heroBounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(6px); } }
@@ -310,8 +318,7 @@ export default function LandingPage() {
   return (
     <>
       <style>{KEYFRAMES}</style>
-      
-      
+
       <div id="fb-lp" className="[min-height:100vh] [background:#fff] [font-family:Nunito,system-ui,sans-serif]">
       
         {/* Urgency Banner */}
@@ -542,28 +549,83 @@ export default function LandingPage() {
             Alumni Kami Sekarang Kuliah Di
           </p>
           <div className="[width:100%] [overflow:hidden] [mask-image:linear-gradient(to_right,transparent,black_6%,black_94%,transparent)] [-webkit-mask-image:linear-gradient(to_right,transparent,black_6%,black_94%,transparent)]">
-            <div id="alumni-logo-track" className="[display:flex] [width:max-content] [align-items:center] [justify-content:space-around] [box-sizing:border-box] [padding:0_12px] [animation:infiniteScroll_30s_linear_infinite]">
-              <div role="img" aria-label="IPB University" className="[width:110px] [height:64px] [flex:0_0_110px] [background-image:url(/assets/logos/ipb.png)] [background-size:contain] [background-repeat:no-repeat] [background-position:center]"></div>
-              <div role="img" aria-label="Universitas Airlangga" className="[width:110px] [height:64px] [flex:0_0_110px] [background-image:url(/assets/unair.png)] [background-size:contain] [background-repeat:no-repeat] [background-position:center]"></div>
-              <div role="img" aria-label="Universitas Padjadjaran" className="[width:110px] [height:64px] [flex:0_0_110px] [background-image:url(https://www.unpad.ac.id/wp-content/uploads/2025/12/logo-unpad-duo.svg)] [background-size:contain] [background-repeat:no-repeat] [background-position:center]"></div>
-              <div role="img" aria-label="Institut Teknologi Sepuluh Nopember" className="[width:110px] [height:64px] [flex:0_0_110px] [background-image:url(https://katamata.wordpress.com/wp-content/uploads/2009/01/logo-its-biru-transparan.png)] [background-size:contain] [background-repeat:no-repeat] [background-position:center]"></div>
-              <div role="img" aria-label="Universitas Diponegoro" className="[width:110px] [height:64px] [flex:0_0_110px] [background-image:url(https://bauk.undip.ac.id/wp-content/uploads/2023/11/web-undip-logo-1.png)] [background-size:contain] [background-repeat:no-repeat] [background-position:center]"></div>
-              <div role="img" aria-label="University of Nottingham" className="[width:110px] [height:64px] [flex:0_0_110px] [background-image:url(https://www.nottingham.ac.uk/Brand/LegacyAssets/images-multimedia/2022/Logos/BrandEvolution-NottinghamBlue.png)] [background-size:contain] [background-repeat:no-repeat] [background-position:center]"></div>
-              <div role="img" aria-label="Universität Stuttgart" className="[width:110px] [height:64px] [flex:0_0_110px] [background-image:url(https://upload.wikimedia.org/wikipedia/commons/c/cc/Universit%C3%A4t_Stuttgart_Logo.png)] [background-size:contain] [background-repeat:no-repeat] [background-position:center]"></div>
-              <div role="img" aria-label="Universitas Indonesia" className="[width:110px] [height:64px] [flex:0_0_110px] [background-image:url(https://www.monsoonsim.com/uploads/190972_f18baac4e23711d2723e0f822030a77919694fe0.png)] [background-size:contain] [background-repeat:no-repeat] [background-position:center]"></div>
-              <div role="img" aria-label="Institut Teknologi Bandung" className="[width:110px] [height:64px] [flex:0_0_110px] [background-image:url(https://upload.wikimedia.org/wikipedia/id/9/95/Logo_Institut_Teknologi_Bandung.png)] [background-size:contain] [background-repeat:no-repeat] [background-position:center]"></div>
-              <div role="img" aria-label="Universitas Gadjah Mada" className="[width:110px] [height:64px] [flex:0_0_110px] [background-image:url(https://iconlogovector.com/uploads/images/2024/11/lg-673f9e2f068ed-Universitas-Gadjah-Mada.webp)] [background-size:contain] [background-repeat:no-repeat] [background-position:center]"></div>
-              <div aria-hidden="true" role="img" className="[width:110px] [height:64px] [flex:0_0_110px] [background-image:url(/assets/logos/ipb.png)] [background-size:contain] [background-repeat:no-repeat] [background-position:center]"></div>
-              <div aria-hidden="true" role="img" className="[width:110px] [height:64px] [flex:0_0_110px] [background-image:url(/assets/unair.png)] [background-size:contain] [background-repeat:no-repeat] [background-position:center]"></div>
-              <div aria-hidden="true" role="img" className="[width:110px] [height:64px] [flex:0_0_110px] [background-image:url(https://www.unpad.ac.id/wp-content/uploads/2025/12/logo-unpad-duo.svg)] [background-size:contain] [background-repeat:no-repeat] [background-position:center]"></div>
-              <div aria-hidden="true" role="img" className="[width:110px] [height:64px] [flex:0_0_110px] [background-image:url(https://katamata.wordpress.com/wp-content/uploads/2009/01/logo-its-biru-transparan.png)] [background-size:contain] [background-repeat:no-repeat] [background-position:center]"></div>
-              <div aria-hidden="true" role="img" className="[width:110px] [height:64px] [flex:0_0_110px] [background-image:url(https://bauk.undip.ac.id/wp-content/uploads/2023/11/web-undip-logo-1.png)] [background-size:contain] [background-repeat:no-repeat] [background-position:center]"></div>
-              <div aria-hidden="true" role="img" className="[width:110px] [height:64px] [flex:0_0_110px] [background-image:url(https://www.nottingham.ac.uk/Brand/LegacyAssets/images-multimedia/2022/Logos/BrandEvolution-NottinghamBlue.png)] [background-size:contain] [background-repeat:no-repeat] [background-position:center]"></div>
-              <div aria-hidden="true" role="img" className="[width:110px] [height:64px] [flex:0_0_110px] [background-image:url(https://upload.wikimedia.org/wikipedia/commons/c/cc/Universit%C3%A4t_Stuttgart_Logo.png)] [background-size:contain] [background-repeat:no-repeat] [background-position:center]"></div>
-              <div aria-hidden="true" role="img" className="[width:110px] [height:64px] [flex:0_0_110px] [background-image:url(https://www.monsoonsim.com/uploads/190972_f18baac4e23711d2723e0f822030a77919694fe0.png)] [background-size:contain] [background-repeat:no-repeat] [background-position:center]"></div>
-              <div aria-hidden="true" role="img" className="[width:110px] [height:64px] [flex:0_0_110px] [background-image:url(https://upload.wikimedia.org/wikipedia/id/9/95/Logo_Institut_Teknologi_Bandung.png)] [background-size:contain] [background-repeat:no-repeat] [background-position:center]"></div>
-              <div aria-hidden="true" role="img" className="[width:110px] [height:64px] [flex:0_0_110px] [background-image:url(https://iconlogovector.com/uploads/images/2024/11/lg-673f9e2f068ed-Universitas-Gadjah-Mada.webp)] [background-size:contain] [background-repeat:no-repeat] [background-position:center]"></div>
-            </div>
+            <div className="[width:100%] [overflow:hidden] [mask-image:linear-gradient(to_right,transparent,black_6%,black_94%,transparent)] [-webkit-mask-image:linear-gradient(to_right,transparent,black_6%,black_94%,transparent)]">
+  <div id="alumni-logo-track">
+  <div className="alumni-logo-group">
+    <div
+      role="img"
+      aria-label="Universitas Indonesia"
+      className="alumni-logo alumni-logo-ui"
+    ></div>
+
+    <div
+      role="img"
+      aria-label="Institut Teknologi Bandung"
+      className="alumni-logo alumni-logo-itb"
+    ></div>
+
+    <div
+      role="img"
+      aria-label="Universitas Gadjah Mada"
+      className="alumni-logo alumni-logo-ugm"
+    ></div>
+
+    <div
+      role="img"
+      aria-label="IPB University"
+      className="alumni-logo alumni-logo-ipb"
+    ></div>
+
+    <div
+      role="img"
+      aria-label="Universitas Airlangga"
+      className="alumni-logo alumni-logo-unair"
+    ></div>
+
+    <div
+      role="img"
+      aria-label="Universitas Padjadjaran"
+      className="alumni-logo alumni-logo-unpad"
+    ></div>
+
+    <div
+      role="img"
+      aria-label="Institut Teknologi Sepuluh Nopember"
+      className="alumni-logo alumni-logo-its"
+    ></div>
+
+    <div
+      role="img"
+      aria-label="Universitas Diponegoro"
+      className="alumni-logo alumni-logo-undip"
+    ></div>
+
+    <div
+      role="img"
+      aria-label="University of Nottingham"
+      className="alumni-logo alumni-logo-nottingham"
+    ></div>
+
+    <div
+      role="img"
+      aria-label="Universität Stuttgart"
+      className="alumni-logo alumni-logo-stuttgart"
+    ></div>
+  </div>
+
+  <div className="alumni-logo-group" aria-hidden="true">
+    <div className="alumni-logo alumni-logo-ui"></div>
+    <div className="alumni-logo alumni-logo-itb"></div>
+    <div className="alumni-logo alumni-logo-ugm"></div>
+    <div className="alumni-logo alumni-logo-ipb"></div>
+    <div className="alumni-logo alumni-logo-unair"></div>
+    <div className="alumni-logo alumni-logo-unpad"></div>
+    <div className="alumni-logo alumni-logo-its"></div>
+    <div className="alumni-logo alumni-logo-undip"></div>
+    <div className="alumni-logo alumni-logo-nottingham"></div>
+    <div className="alumni-logo alumni-logo-stuttgart"></div>
+  </div>
+</div>
           </div>
         </div>
 
@@ -2315,7 +2377,7 @@ export default function LandingPage() {
           </a>
         </div>
       
-      
+      </div>
     </>
   );
 }

@@ -1022,3 +1022,117 @@ html {
 /* Full Bright landing page typography */
 html, body { font-family: 'Nunito', ui-sans-serif, system-ui, sans-serif; }
 #hero-navbar, #hero-navbar *, #urgency-banner, #urgency-banner * { font-family: 'Nunito', ui-sans-serif, system-ui, sans-serif; }
+/* Alumni logo marquee: tanpa jarak dan tanpa celah saat looping */
+@keyframes infiniteScroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+/* =========================================
+   ALUMNI LOGO MARQUEE
+   ========================================= */
+
+#alumni-logo-track {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    gap: 0;
+    padding: 0;
+    margin: 0;
+    animation: infiniteScroll 35s linear infinite;
+    will-change: transform;
+}
+
+.alumni-logo-group {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    gap: 0;
+    padding: 0;
+    margin: 0;
+}
+
+/* Ukuran kotak logo */
+.alumni-logo {
+    width: 110px;
+    height: 64px;
+    flex: 0 0 110px;
+    margin: 0 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Semua logo */
+.alumni-logo-ui {
+    background-image: url("https://www.monsoonsim.com/uploads/190972_f18baac4e23711d2723e0f822030a77919694fe0.png");
+}
+
+.alumni-logo-itb {
+    background-image: url("https://upload.wikimedia.org/wikipedia/id/9/95/Logo_Institut_Teknologi_Bandung.png");
+}
+
+.alumni-logo-ugm {
+    background-image: url("https://iconlogovector.com/uploads/images/2024/11/lg-673f9e2f068ed-Universitas-Gadjah-Mada.webp");
+}
+
+.alumni-logo-ipb {
+    background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixYKuV2c5YoKDj9dHdJt5S1Lt-RSNZ0_3GgZbEbylP9emf5D9KGekhNq9RImhInYYgfcyOsyFFbDOdugmWwN2nWqxA2tDtJux26STvOi6BVFBM43oClQX5rK3aeIzbhUm_thZRVsKYxFgFJXa4AoumNIp5eBy3nYfzqgBpHIX_afCiFGRzAz-E_g/w320-h223/IPB%20University%20(Institut%20Pertanian%20Bogor)%20Logo.png");
+}
+
+.alumni-logo-unair {
+    background-image: url("/assets/unair.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.alumni-logo-unpad {
+    background-image: url("https://www.unpad.ac.id/wp-content/uploads/2025/12/logo-unpad-duo.svg");
+}
+
+.alumni-logo-its {
+    background-image: url("https://katamata.wordpress.com/wp-content/uploads/2009/01/logo-its-biru-transparan.png");
+}
+
+.alumni-logo-undip {
+    background-image: url("https://bauk.undip.ac.id/wp-content/uploads/2023/11/web-undip-logo-1.png");
+}
+
+.alumni-logo-nottingham {
+    background-image: url("https://www.nottingham.ac.uk/Brand/LegacyAssets/images-multimedia/2022/Logos/BrandEvolution-NottinghamBlue.png");
+}
+
+.alumni-logo-stuttgart {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/cc/Universit%C3%A4t_Stuttgart_Logo.png");
+}
+
+/* Animasi infinite tanpa jeda */
+@keyframes infiniteScroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .alumni-logo {
+        width: 90px;
+        height: 52px;
+        flex-basis: 90px;
+        margin: 0 12px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #alumni-logo-track {
+        animation-play-state: paused;
+    }
+}
