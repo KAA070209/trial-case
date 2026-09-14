@@ -575,15 +575,15 @@ export default function LandingPage() {
         </div>
 
         {/* Problem / Agitation Section */}
-        <section id="agitation" className="[background:#F3F3F3] [padding:16px_24px_60px]">
-          <div className="[max-width:840px] [margin:0_auto]">
-            <div className="[margin-bottom:28px] [text-align:center]">
-              <div className="[display:inline-block] [border-radius:9999px] [padding:10px_28px] [font-size:13px] [line-height:20px] [font-weight:800] [letter-spacing:0.02em] [text-transform:uppercase] [background:#fff] [color:#D70808] [box-shadow:0_4px_16px_rgba(0,0,0,0.06)]">Kamu Sudah Mencoba</div>
+        <section id="agitation" className="[background:#F3F3F3] [padding:56px_24px]">
+          <div className="[max-width:672px] [margin:0_auto]">
+            <div className="[margin-bottom:24px] [text-align:center]">
+              <div className="[display:inline-block] [border-radius:9999px] [padding:10px_24px] [font-size:13px] [line-height:20px] [font-weight:800] [letter-spacing:0.02em] [text-transform:uppercase] [background:#fff] [color:#D70808] [box-shadow:0_4px_16px_rgba(0,0,0,0.06)]">Kamu Sudah Mencoba</div>
             </div>
       
-            <h2 className="[margin:0_0_22px] [text-align:center] [font-size:50px] [line-height:1.18] [font-weight:900] [font-family:Nunito,sans-serif] [color:#151515]">Sudah Banyak Belajar,<br /><span className="[color:#D70808]">Tapi Kenapa Skor Masih Stuck?</span></h2>
+            <h2 className="[margin:0_0_20px] [text-align:center] [font-size:clamp(28px,3.6vw,42px)] [line-height:1.2] [font-weight:900] [font-family:Nunito,sans-serif] [color:#151515]">Sudah Banyak Belajar,<br /><span className="[color:#D70808]">Tapi Kenapa Skor Masih Stuck?</span></h2>
       
-            <p className="[max-width:820px] [margin:0_auto_42px] [text-align:center] [font-size:16px] [line-height:1.55] [color:#6b6b6b]">Bukan karena kamu kurang berusaha. Hanya saja, <b>usahamu belum memberikan hasil yang diharapkan.</b></p>
+            <p className="[margin:0_0_36px] [text-align:center] [font-size:16px] [line-height:1.6] [color:#6b6b6b]">Bukan karena kamu kurang berusaha. Hanya saja, <b>usahamu belum memberikan hasil yang diharapkan.</b></p>
       
             <div className="[border-radius:20px] [background:#fff] [box-shadow:0_4px_24px_rgba(0,0,0,0.07)] [overflow:hidden] [margin-bottom:32px]">
               <div className="contents max-[559px]:hidden">
@@ -598,7 +598,7 @@ export default function LandingPage() {
               
                 <div className="[display:grid] [grid-template-columns:1fr_1fr] [align-items:stretch] [border-bottom:1px_solid_#f2f2f2] max-[559px]:[grid-template-columns:1fr]">
                   <div className="[display:flex] [align-items:flex-start] [gap:12px] [padding:18px] max-[559px]:[padding:16px_16px_10px]">
-                    <span className="[flex-shrink:0] [font-size:12px] [font-weight:900] [font-family:Nunito,sans-serif] [color:#c9c9c9] [padding-top:2px]">01</span>
+                    <span className="[flex-shrink:0] [font-size:12px] [font-weight:900] [font-family:Nunito,sans-serif] [color:#6b7280] [padding-top:2px]">01</span>
                     <p className="[margin:0] [font-size:15px] [line-height:1.55] [font-weight:600] [color:#151515]">Sudah download banyak PDF materi</p>
                   </div>
                   <div className="[display:flex] [align-items:flex-start] [gap:10px] [padding:18px] [border-left:1px_solid_#f2f2f2] [background:#FFFAFA] max-[559px]:[padding:0_16px_16px_44px] max-[559px]:[background:transparent] max-[559px]:[border-left:initial]">
@@ -608,7 +608,7 @@ export default function LandingPage() {
               
                 <div className="[display:grid] [grid-template-columns:1fr_1fr] [align-items:stretch] [border-bottom:1px_solid_#f2f2f2] max-[559px]:[grid-template-columns:1fr]">
                   <div className="[display:flex] [align-items:flex-start] [gap:12px] [padding:18px] max-[559px]:[padding:16px_16px_10px]">
-                    <span className="[flex-shrink:0] [font-size:12px] [font-weight:900] [font-family:Nunito,sans-serif] [color:#c9c9c9] [padding-top:2px]">02</span>
+                    <span className="[flex-shrink:0] [font-size:12px] [font-weight:900] [font-family:Nunito,sans-serif] [color:#6b7280] [padding-top:2px]">02</span>
                     <p className="[margin:0] [font-size:15px] [line-height:1.55] [font-weight:600] [color:#151515]">Sudah nonton banyak video TOEFL</p>
                   </div>
                   <div className="[display:flex] [align-items:flex-start] [gap:10px] [padding:18px] [border-left:1px_solid_#f2f2f2] [background:#FFFAFA] max-[559px]:[padding:0_16px_16px_44px] max-[559px]:[background:transparent] max-[559px]:[border-left:initial]">
@@ -618,7 +618,7 @@ export default function LandingPage() {
               
                 <div className="[display:grid] [grid-template-columns:1fr_1fr] [align-items:stretch] [border-bottom:1px_solid_#f2f2f2] max-[559px]:[grid-template-columns:1fr]">
                   <div className="[display:flex] [align-items:flex-start] [gap:12px] [padding:18px] max-[559px]:[padding:16px_16px_10px]">
-                    <span className="[flex-shrink:0] [font-size:12px] [font-weight:900] [font-family:Nunito,sans-serif] [color:#c9c9c9] [padding-top:2px]">03</span>
+                    <span className="[flex-shrink:0] [font-size:12px] [font-weight:900] [font-family:Nunito,sans-serif] [color:#6b7280] [padding-top:2px]">03</span>
                     <p className="[margin:0] [font-size:15px] [line-height:1.55] [font-weight:600] [color:#151515]">Sudah mengerjakan banyak latihan soal</p>
                   </div>
                   <div className="[display:flex] [align-items:flex-start] [gap:10px] [padding:18px] [border-left:1px_solid_#f2f2f2] [background:#FFFAFA] max-[559px]:[padding:0_16px_16px_44px] max-[559px]:[background:transparent] max-[559px]:[border-left:initial]">
@@ -628,7 +628,7 @@ export default function LandingPage() {
               
                 <div className="[display:grid] [grid-template-columns:1fr_1fr] [align-items:stretch] [border-bottom:1px_solid_#f2f2f2] max-[559px]:[grid-template-columns:1fr]">
                   <div className="[display:flex] [align-items:flex-start] [gap:12px] [padding:18px] max-[559px]:[padding:16px_16px_10px]">
-                    <span className="[flex-shrink:0] [font-size:12px] [font-weight:900] [font-family:Nunito,sans-serif] [color:#c9c9c9] [padding-top:2px]">04</span>
+                    <span className="[flex-shrink:0] [font-size:12px] [font-weight:900] [font-family:Nunito,sans-serif] [color:#6b7280] [padding-top:2px]">04</span>
                     <p className="[margin:0] [font-size:15px] [line-height:1.55] [font-weight:600] [color:#151515]">Sudah ikut kursus bahasa Inggris</p>
                   </div>
                   <div className="[display:flex] [align-items:flex-start] [gap:10px] [padding:18px] [border-left:1px_solid_#f2f2f2] [background:#FFFAFA] max-[559px]:[padding:0_16px_16px_44px] max-[559px]:[background:transparent] max-[559px]:[border-left:initial]">
@@ -638,7 +638,7 @@ export default function LandingPage() {
               
                 <div className="[display:grid] [grid-template-columns:1fr_1fr] [align-items:stretch] max-[559px]:[grid-template-columns:1fr]">
                   <div className="[display:flex] [align-items:flex-start] [gap:12px] [padding:18px] max-[559px]:[padding:16px_16px_10px]">
-                    <span className="[flex-shrink:0] [font-size:12px] [font-weight:900] [font-family:Nunito,sans-serif] [color:#c9c9c9] [padding-top:2px]">05</span>
+                    <span className="[flex-shrink:0] [font-size:12px] [font-weight:900] [font-family:Nunito,sans-serif] [color:#6b7280] [padding-top:2px]">05</span>
                     <p className="[margin:0] [font-size:15px] [line-height:1.55] [font-weight:600] [color:#151515]">Sudah di kursus, berusaha ikutin semua jadwal kelas</p>
                   </div>
                   <div className="[display:flex] [align-items:flex-start] [gap:10px] [padding:18px] [border-left:1px_solid_#f2f2f2] [background:#FFFAFA] max-[559px]:[padding:0_16px_16px_44px] max-[559px]:[background:transparent] max-[559px]:[border-left:initial]">
@@ -797,27 +797,27 @@ export default function LandingPage() {
         <section id="proof" className="[background:#fff] [padding:72px_24px]">
           <div className="[max-width:672px] [margin:0_auto]">
             <div className="[text-align:center] [margin-bottom:36px]">
-              <div className="[display:inline-flex] [align-items:center] [gap:8px] [font-size:12px] [font-weight:700] [text-transform:uppercase] [letter-spacing:0.08em] [padding:6px_16px] [border-radius:9999px] [margin-bottom:20px] [background:#FFF0F0] [color:#D70808] [border:1px_solid_#ffb3b3]">📱 Bukti Nyata dari Alumni</div>
-              <h2 className="[margin:0_0_14px] [font-size:clamp(24px,3vw,36px)] [line-height:1.25] [font-weight:900] [font-family:Nunito,sans-serif] [color:#151515]">Metode Kami Berhasil Membuat<br /><span className="[color:#7c3aed] [font-size:26.46px]">Ribuan Alumni Kami Capai TOEFL 500+&nbsp;</span></h2>
+              <div className="[display:inline-flex] [align-items:center] [gap:8px] [font-size:12px] [font-weight:700] [text-transform:uppercase] [letter-spacing:0.08em] [padding:6px_16px] [border-radius:9999px] [margin-bottom:20px] [background:#FFF0F0] [color:#D70808] [border:1px_solid_#ffb3b3]">🏆 Bukti Nyata dari Alumni</div>
+              <h2 className="[margin:0_0_14px] [font-size:clamp(24px,3vw,36px)] [line-height:1.25] [font-weight:900] [font-family:Nunito,sans-serif] [color:#151515]">Metode Kami Berhasil Membuat<br /><span className="[font-size:26.46px] [color:#d70808]">Ribuan Alumni Kami Capai TOEFL 500+&nbsp;</span></h2>
               
-              <p className="[margin:0] [font-size:14px] [color:#9ca3af]">Klik foto untuk memperbesar</p>
+              <p className="[margin:0] [font-size:14px] [color:#6b7280]">Klik foto untuk memperbesar</p>
             </div>
       
-            <div className="[margin:0_auto_32px] [max-width:980px] [display:flex] [flex-direction:column]">
+            <div className="[margin:0_auto_32px] [max-width:420px] [display:flex] [flex-direction:column]">
               
                 <div className="[display:flex] [cursor:pointer] [flex-direction:column] [align-items:center] [gap:10px] [padding:20px_0] [border-bottom:1px_solid_#e5e7eb]" onClick={() => setLightboxIdx(0)}>
-                  <p className="[margin:0] [text-align:left] [width:100%] [font-size:11px] [font-weight:800] [font-family:Nunito,sans-serif] [color:#151515]">Skor <span className="[color:#D70808]">547</span></p>
-                  <div className="[border-radius:14px] [box-shadow:0_6px_24px_rgba(0,0,0,0.18)] [aspect-ratio:16/9] [width:100%] [overflow:hidden] [background-image:url(/assets/toefl1.webp)] [background-size:cover] [background-position:center]"></div>
+                  <p className="[margin:0] [font-size:18px] [font-weight:800] [font-family:Nunito,sans-serif] [color:#151515]">Skor <span className="[color:#D70808]">547</span></p>
+                  <div className="[border-radius:14px] [box-shadow:0_6px_24px_rgba(0,0,0,0.18)] [aspect-ratio:1/1] [width:100%] [overflow:hidden] [background-image:url(/assets/toefl1.webp)] [background-size:cover] [background-position:center]"></div>
                 </div>
               
                 <div className="[display:flex] [cursor:pointer] [flex-direction:column] [align-items:center] [gap:10px] [padding:20px_0] [border-bottom:1px_solid_#e5e7eb]" onClick={() => setLightboxIdx(1)}>
                   <p className="[margin:0] [font-size:18px] [font-weight:800] [font-family:Nunito,sans-serif] [color:#151515]">Skor <span className="[color:#D70808]">543</span></p>
-                  <div className="[border-radius:14px] [box-shadow:0_6px_24px_rgba(0,0,0,0.18)] [aspect-ratio:16/9] [width:100%] [overflow:hidden] [background-image:url(/assets/toefl2.webp)] [background-size:cover] [background-position:center]"></div>
+                  <div className="[border-radius:14px] [box-shadow:0_6px_24px_rgba(0,0,0,0.18)] [aspect-ratio:1/1] [width:100%] [overflow:hidden] [background-image:url(/assets/toefl2.webp)] [background-size:cover] [background-position:center]"></div>
                 </div>
               
                 <div className="[display:flex] [cursor:pointer] [flex-direction:column] [align-items:center] [gap:10px] [padding:20px_0] [border-bottom:1px_solid_#e5e7eb]" onClick={() => setLightboxIdx(2)}>
                   <p className="[margin:0] [font-size:18px] [font-weight:800] [font-family:Nunito,sans-serif] [color:#151515]">Skor <span className="[color:#D70808]">563</span></p>
-                  <div className="[border-radius:14px] [box-shadow:0_6px_24px_rgba(0,0,0,0.18)] [aspect-ratio:16/9] [width:100%] [overflow:hidden] [background-image:url(/assets/toefl3.webp)] [background-size:cover] [background-position:center]"></div>
+                  <div className="[border-radius:14px] [box-shadow:0_6px_24px_rgba(0,0,0,0.18)] [aspect-ratio:1/1] [width:100%] [overflow:hidden] [background-image:url(/assets/toefl3.webp)] [background-size:cover] [background-position:center]"></div>
                 </div>
               
             </div>
@@ -825,12 +825,14 @@ export default function LandingPage() {
             <div className="[text-align:center]">
               <div className="[display:flex] [flex-wrap:wrap] [gap:12px] [justify-content:center]">
                 <a href="#pricing" className="[display:inline-flex] [align-items:center] [justify-content:center] [gap:8px] [font-weight:700] [border-radius:16px] [padding:14px_28px] [font-size:16px] [color:#fff] [background:#D70808] [box-shadow:0_4px_20px_rgba(215,8,8,0.35)] [text-decoration:none]">Gabung Sekarang →</a>
-                <a href="#testimonials" className="[display:inline-flex] [align-items:center] [justify-content:center] [gap:8px] [font-weight:700] [border-radius:16px] [padding:4px_10px] [font-size:11px] [color:#151515] [border:2px_solid_#D70808] [text-decoration:none]">Lihat Lebih Banyak Bukti →</a>
+                <a href="#testimonials" className="[display:inline-flex] [align-items:center] [justify-content:center] [gap:8px] [font-weight:700] [border-radius:16px] [padding:14px_28px] [font-size:16px] [color:#151515] [border:2px_solid_#D70808] [text-decoration:none]">Lihat Lebih Banyak Bukti →</a>
               </div>
               <div className="[margin-top:12px] [display:flex] [align-items:center] [justify-content:center] [flex-wrap:wrap] [gap:8px_12px]">
-                <span className="[display:flex] [align-items:center] [gap:4px] [font-size:12px] [font-weight:600] [color:#6b7280]">★★★★★<span className="[margin-left:4px]">4.9/5 Google Review</span></span>
-                <span className="[font-size:12px] [color:#6b7280]">•</span><span className="[font-size:12px] [font-weight:600] [color:#6b7280]">45.000+ Alumni Sukses</span>
-                <span className="[font-size:12px] [color:#6b7280]">•</span><span className="[font-size:12px] [font-weight:600] [color:#6b7280]">🛡 Garansi 100%</span>
+                <span className="[display:flex] [align-items:center] [gap:4px] [font-size:12px] [font-weight:600] [color:#6b7280]">⭐⭐⭐⭐⭐<span className="[margin-left:4px]">4.9/5 Google Review</span></span>
+                <span className="[font-size:12px] [color:#6b7280]">•</span>
+                <span className="[font-size:12px] [font-weight:600] [color:#6b7280]">45.000+ Alumni Sukses</span>
+                <span className="[font-size:12px] [color:#6b7280]">•</span>
+                <span className="[font-size:12px] [font-weight:600] [color:#6b7280]">✅ Garansi 100%</span>
               </div>
             </div>
           </div>

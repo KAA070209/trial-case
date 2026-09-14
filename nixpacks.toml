@@ -1,2 +1,2 @@
 [phases.build]
-cmds = ["npm ci && npm run build"]
+cmds = ["npm cache clean --force && npm ci --registry=https://registry.npmjs.org && npm run build"]
