@@ -850,11 +850,19 @@ export default function LandingPage() {
               <p className="[margin:0] [font-size:16px] [max-width:560px] [margin-left:auto] [margin-right:auto] [line-height:1.6] [color:#3d3d3d]">Semua yang kamu butuhkan untuk mengetahui kelemahan, belajar, berlatih, dan menghadapi ujian.</p>
             </div>
       
-            <div className="[position:relative] [max-width:1040px] [margin:0_auto_40px] [overflow:hidden] [border-radius:18px] [background:#151515] [box-shadow:0_8px_28px_rgba(0,0,0,0.18)] [line-height:0]">
-              <video ref={videoRef} controls preload="metadata" playsInline onPlay={playVideo} className="[display:block] [width:100%] [aspect-ratio:16/9] [object-fit:cover] [background:#151515]">
+            <div className="[position:relative] [max-width:1040px] [margin:0_auto_40px] [overflow:hidden] [border-radius:18px] [background:#151515] [box-shadow:0_8px_28px_rgba(0,0,0,0.18)] [line-height:0] [cursor:pointer]" onClick={playLmsVideo}>
+              <video ref={lmsVideoRef} controls preload="metadata" playsInline onPlay={() => setShowLmsOverlay(false)} onPause={() => setShowLmsOverlay(true)} className="[display:block] [width:100%] [aspect-ratio:16/9] [object-fit:cover] [background:#151515]">
                 <source src="/assets/NEW.mp4#t=4" type="video/mp4" />
                 Browser kamu tidak mendukung pemutaran video.
               </video>
+              {showLmsOverlay ? (<>
+                <div className="[position:absolute] [inset:0] [display:flex] [flex-direction:column] [align-items:center] [justify-content:center] [gap:14px] [background:rgba(21,21,21,0.35)]">
+                  <span className="[display:flex] [align-items:center] [justify-content:center] [width:76px] [height:76px] [border-radius:9999px] [background:#D70808] [box-shadow:0_8px_28px_rgba(215,8,8,0.5)]">
+                    <svg width="30" height="30" viewBox="0 0 24 24" fill="#fff"><path d="M8 5.5v13l11-6.5z"></path></svg>
+                  </span>
+                  <span className="[font-size:13px] [font-weight:800] [font-family:Nunito,sans-serif] [color:#fff] [text-shadow:0_2px_8px_rgba(0,0,0,0.4)]">Putar showcase LMS</span>
+                </div>
+              </>) : null}
             </div>
       
             <div className="[display:flex] [flex-direction:column] [gap:20px] [max-width:1040px] [margin:0_auto_40px]">
