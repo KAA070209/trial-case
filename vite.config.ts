@@ -39,6 +39,12 @@ export default defineConfig({
         compression({ algorithm: 'gzip', exclude: [/\.(br)$/, /\.(gz)$/] }),
         compression({ algorithm: 'brotliCompress', exclude: [/\.(br)$/, /\.(gz)$/] }),
     ],
+    server: {
+        host: '127.0.0.1',
+        watch: {
+            ignored: ['**/public/assets/**'],
+        },
+    },
     build: {
         rollupOptions: {
             output: {
