@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap');
 @import 'tailwindcss';
 @import 'tw-animate-css';
 
@@ -957,3 +958,67 @@
 @utility animate-bounce-slow {
     animation: bounce-slow 2s infinite;
 }
+
+
+/* Full Bright landing page final adjustments */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+[id] {
+    scroll-margin-top: 90px;
+}
+
+#hero-cta-buttons a {
+    display: inline-flex !important;
+    width: fit-content !important;
+    min-width: 0 !important;
+    max-width: 100%;
+    white-space: nowrap;
+    text-decoration: none !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+#hero-cta-buttons a:first-child {
+    color: #ffffff !important;
+    background: #D70808 !important;
+}
+
+#hero-cta-buttons a:last-child {
+    color: #151515 !important;
+    background: #ffffff !important;
+    border: 2px solid #D70808 !important;
+}
+
+#hero-cta-buttons a:hover {
+    transform: translateY(-2px);
+}
+
+@media (max-width: 500px) {
+    #hero-cta-buttons a {
+        width: 100% !important;
+        white-space: normal;
+    }
+}
+@media (max-width: 600px) {
+    #hero-navbar > div {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    #hero-navbar img {
+        width: 110px;
+    }
+
+    #hero-navbar a[href="#pricing"] {
+        min-width: 0;
+        height: 52px;
+        padding: 6px 12px;
+    }
+}   
+
+/* Full Bright landing page typography */
+html, body { font-family: 'Nunito', ui-sans-serif, system-ui, sans-serif; }
+#hero-navbar, #hero-navbar *, #urgency-banner, #urgency-banner * { font-family: 'Nunito', ui-sans-serif, system-ui, sans-serif; }
