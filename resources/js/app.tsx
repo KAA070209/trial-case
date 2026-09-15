@@ -7,7 +7,7 @@ import TrackingLayout from '@/layouts/tracking-layout';
 
 const AuthLayout = lazy(() => import('@/layouts/auth-layout'));
 
-const appName = import.meta.env.VITE_APP_NAME || 'PBM Landing Page';
+const appName = import.meta.env.VITE_APP_NAME || 'Raih TOEFL 500+ Cukup 15 Hari. (LMS + Tutor Ai)';
 
 createInertiaApp({
     title: (title) => (title ? `${title}` : appName),

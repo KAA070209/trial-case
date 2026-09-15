@@ -60,7 +60,7 @@
     @viteReactRefresh
     @vite(['resources/css/app.css', 'resources/js/app.tsx', "resources/js/pages/{$page['component']}.tsx"])
     <x-inertia::head>
-        <title>{{ config('app.name', 'PBM Landing Page Boilerplate') }}</title>
+        <title>{{ config('app.name', 'Raih TOEFL 500+ Cukup 15 Hari. (LMS + Tutor Ai)') }}</title>
     </x-inertia::head>
 </head>
 <body class="font-sans antialiased">
